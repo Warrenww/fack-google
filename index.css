@@ -1,0 +1,92 @@
+body,html{
+  margin: 0;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  font-family: "Taipei Sans", "mono";
+  display: flex;
+  flex-direction: column;
+}
+nav,footer{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer{
+  background: #ccc;
+  flex-direction: column;
+  display: block;
+}
+nav div, footer div{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+footer>div{
+  width: 100%;
+  padding:10px;
+  border:1px solid #aaa;
+  margin: 0;
+}
+nav div a, nav div span, footer div a{
+  text-decoration: none;
+  color: #555;
+  margin: 10px;
+  font-size: .8em;
+}
+nav div a:hover, footer div a:hover{
+  text-decoration: underline;
+}
+.content{
+  flex:1;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+#search{
+  display: flex;
+  width: 40%;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 10px;
+}
+#search input{
+  border: 0;
+  outline: 0;
+  flex: 1;
+}
+.content button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  outline:0;
+  cursor: pointer;
+}
+.searchArea{
+  width: 100%;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  padding: 10px;
+}
+.searchResults{
+  width: 80%;
+}
+.searchResults .result {
+  margin: 10px;
+  width: 50%;
+}
+.searchResults .result .url{
+ font-size: 14px;
+ color: #aaa;
+}
+.searchResults .result .title{
+margin: 5px 0;
+color: #4c67ab
+}
+.searchResults .result .content{
+
+}
